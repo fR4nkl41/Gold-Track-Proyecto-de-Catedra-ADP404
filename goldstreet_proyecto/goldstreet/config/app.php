@@ -15,6 +15,9 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    // Versión mostrada en el pie de página (componente <x-footer>)
+    'version' => env('APP_VERSION', '1.0.0'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -65,7 +68,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -114,7 +117,7 @@ return [
     | manage Laravel's "maintenance mode" status. The "cache" driver will
     | allow maintenance mode to be controlled across multiple machines.
     |
-    | Supported drivers: "file", "cache", "array"
+    | Supported drivers: "file", "cache"
     |
     */
 
